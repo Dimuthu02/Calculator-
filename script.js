@@ -38,3 +38,10 @@ function fn9() {
   let previous = document.getElementById("display").innerHTML;
   document.getElementById("display").innerHTML = previous + 9;
 }
+
+function erase()
+{
+    let previous=document.getElementById("display").innerHTML;
+    let erase=previous.slice(0,-1);
+    document.getElementById("display").innerHTML=erase;
+}
