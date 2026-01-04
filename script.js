@@ -38,7 +38,3 @@ function fn9() {
   let previous = document.getElementById("display").innerHTML;
   document.getElementById("display").innerHTML = previous + 9;
 }
-function fn00() {
-  let previous = document.getElementById("display").innerHTML;
-  document.getElementById("display").innerHTML = previous + 0O0;
-}
