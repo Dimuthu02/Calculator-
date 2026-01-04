@@ -45,3 +45,57 @@ function erase()
     let erase=previous.slice(0,-1);
     document.getElementById("display").innerHTML=erase;
 }
+
+let firstvalue;
+let op;
+
+function add()
+{
+    firstvalue=document.getElementById("display").innerHTML;
+    document.getElementById("display").innerHTML=0
+    op=1
+}
+
+
+function min() {
+  firstvalue = document.getElementById("display").innerHTML;
+  document.getElementById("display").innerHTML = 0;
+  op = 2;
+}
+
+function mul() {
+  firstvalue = document.getElementById("display").innerHTML;
+  document.getElementById("display").innerHTML = 0;
+  op = 3;
+}
+
+function dev() {
+  firstvalue = document.getElementById("display").innerHTML;
+  document.getElementById("display").innerHTML = 0;
+  op = 4;
+}
+
+function equal()
+{
+    let secondvalue=document.getElementById("display").innerHTML;
+    let output;
+if(op==1)
+{
+output=firstvalue+secondvalue
+}
+else if(op==2)
+{
+output = firstvalue - secondvalue;
+}
+else if(op==3)
+{
+output = firstvalue * secondvalue;
+}
+else
+{
+    output = firstvalue / secondvalue;
+
+}
+
+document.getElementById("display").innerHTML=output;
+}
