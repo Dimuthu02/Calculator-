@@ -39,9 +39,13 @@ form .display {
   margin: 20px 0;
 }
 
-form .display input {
+form .display h4 {
   text-align: right;
   flex: 1;
   font-size: 45px;
   box-shadow: none;
+}
+
+form h4.equal {
+  width: 145px;
 }
